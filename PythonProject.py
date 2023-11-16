@@ -21,7 +21,7 @@ def umbrellaReminder():
 	# formatting data 
 	sky = time_sky.split('\n')[1] 
 
-	if sky == "Smoke" or sky == "Rain And Snow" or sky == "Showers" or sky == "Haze" or sky == "Cloudy": 
+	if sky == "Rainy" or sky == "Rain" or sky == "Showers" or sky == "Haze" or sky == "Cloudy": 
 		print("Sending email...")
 		smtp_object = smtplib.SMTP('smtp.gmail.com', 587) 
 		
