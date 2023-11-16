@@ -29,7 +29,7 @@ def umbrellaReminder():
 		smtp_object.starttls() 
 		
 		# Authentication 
-		smtp_object.login("srk.ddk@gmail.com", "xwhgueqolymlzdzm") 
+		smtp_object.login("srk.ddk@gmail.com", "password") 
 		subject = "Umbrella Reminder"
 		body = f"Take an umbrella before leaving the house.Weather condition for today is {sky} and temperature is {temperature} in {city}." 
 		msg = f"Subject:{subject}\n\n{body}\n\nRegards,\nPythonProject".encode('utf-8') 
